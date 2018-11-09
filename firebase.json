@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "dist/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [{
+      "source": "/",
+      "destination": "/en",
+      "type": 301
+    }],
+    "rewrites": [{
+        "source": "/en/**",
+        "destination": "/en/index.html"
+      },
+      {
+        "source": "/de/**",
+        "destination": "/de/index.html"
+      }
+    ]
+  }
+}
