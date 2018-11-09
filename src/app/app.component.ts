@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SwService } from './log-update.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'swBaseHrefBug';
+  // constructor(public sw: SwService) {
+  //   sw.activate();
+  // }
 }
